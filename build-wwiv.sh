@@ -3,6 +3,8 @@
 set -xe
 
 cd $1
+pwd
+ls
 
 (
 cd deps/cl342
