@@ -6,7 +6,8 @@ LABEL org.wwivbbs.git_branch=${git_branch}
 LABEL org.wwivbbs.git_refspec=${git_refspec}
 
 RUN dnf -y install dnf-plugins-core
-RUN dnf -y copr enable larsks/binkd
+# RUN dnf -y copr enable larsks/binkd
+RUN dnf -y copr enable epel-7-x86_64
 RUN dnf install -y \
 	git \
 	make \
